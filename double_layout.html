@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            min-width: 650px;
+        }
+        header,footer{
+            text-align: center;
+            background: #aaaaaa;
+        }
+        .middle-son{
+            margin: 0 200px 0 200px;
+            height: 100px;
+        }
+        .middle{
+            float: left;
+            height: 100px;
+            width: 100%;
+            background: red;
+        }
+        .left{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background: green;
+            margin-left: -100%;
+        }
+        .right{
+            float: left;
+            width: 200px;
+            height: 100px;
+            background: yellow;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+
+<header><h1>header</h1></header>
+
+<!--先写中间部分-->
+<div class="middle">
+    <div class="middle-son"></div>
+</div>
+<div class="left"></div>
+<div class="right"></div>
+
+
+<footer><h1>footer</h1></footer>
+
+</body>
+</html>
