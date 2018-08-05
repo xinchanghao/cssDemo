@@ -1,0 +1,37 @@
+.container{
+	width: 100px;
+	color: blue;
+}
+
+.son{
+	width: 100px;
+	height: 100px;
+	-webkit-animation: spin 5s linear 1s 5 alternate;
+    animation: spin 5s linear infinite 2 alternate;
+}
+
+/*
+animation第一个参数是动画名称，即spin，
+第2个参数是动画时长，在此设置为5秒，
+第3个属性为速度曲线，在此设置为匀速运动，
+第4个属性infinite参数表示动画将无限循环，如果我们只希望动画循环一定次数，则可以将其修改为相应的数字，一次可以不用设置。
+参数alternate,动画将在偶数次数时反向播放动画。
+*/
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
