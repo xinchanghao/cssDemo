@@ -7,7 +7,7 @@
 	width: 100px;
 	height: 100px;
 	-webkit-animation: spin 5s linear 1s 5 alternate;
-    animation: spin 5s linear infinite 2 alternate;
+    animation: spin 5s linear infinite alternate;
 }
 
 /*
